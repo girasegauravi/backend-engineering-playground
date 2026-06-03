@@ -107,11 +107,6 @@ class NameComparator implements Comparator<Employee> {
 
     @Override
     public int compare(Employee e1, Employee e2) {
-
-        /*
-            String already implements Comparable
-        */
-
         return e1.name.compareTo(e2.name);
     }
 }
@@ -123,13 +118,6 @@ class SalaryComparator implements Comparator<Employee> {
 
     @Override
     public int compare(Employee e1, Employee e2) {
-
-        /*
-            Descending order
-
-            Higher salary first
-        */
-
         return Double.compare(e2.salary, e1.salary);
     }
 }
